@@ -5,6 +5,7 @@ import Layout from "./layout/Layout.tsx";
 import Home from "./pages/Home.tsx";
 import { mainRoutes } from "./routes/MainRoutes.tsx";
 import "./index.css";
+import "reflect-metadata"; // Must be imported first
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
