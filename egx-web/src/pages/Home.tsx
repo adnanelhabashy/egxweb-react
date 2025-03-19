@@ -1,10 +1,14 @@
 // src/pages/Home.tsx
+import HeroSection from "../components/HeorSection";
+import MarketOverview from "../components/MarketOverview";
+import DataTable from "../components/DataTable";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Home Page</h2>
-      <p>Welcome to our React app!</p>
-    </div>
+    <>
+      <HeroSection />
+      <MarketOverview />
+      <DataTable />
+    </>
   );
 }
