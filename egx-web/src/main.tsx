@@ -6,6 +6,7 @@ import Home from "./pages/Home.tsx";
 import { mainRoutes } from "./routes/MainRoutes.tsx";
 import "./index.css";
 import "reflect-metadata"; // Must be imported first
+import "./i18n"; // Initialize i18next
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
