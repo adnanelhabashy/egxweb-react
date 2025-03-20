@@ -1,0 +1,10 @@
+/* Example for tooltip fade-in */
+.recharts-default-tooltip {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recharts-default-tooltip:hover,
+.recharts-default-tooltip-active {
+  opacity: 1;
+}

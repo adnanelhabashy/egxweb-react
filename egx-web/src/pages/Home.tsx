@@ -5,6 +5,8 @@
 // import { container } from "../IocContainer/IocContainer";
 // import { MyService } from "../services/myService";
 
+import IndexCharts from "../components/home-page-components/index-chart-card/index-charts-card";
+
 export default function Home() {
   //const myService = container.get(MyService);
 
@@ -14,6 +16,7 @@ export default function Home() {
       {/* <HeroSection />
       <MarketOverview />
       <DataTable /> */}
+      <IndexCharts />
     </>
   );
 }

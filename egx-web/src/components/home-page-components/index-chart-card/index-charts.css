@@ -1,0 +1,52 @@
+/* Hide scrollbar for WebKit-based browsers by default */
+.scrollbar-hide::-webkit-scrollbar {
+  height: 0;
+  transition: height 0.2s ease;
+}
+
+/* Show scrollbar on hover (WebKit) */
+.hover\:scrollbar-show:hover::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* Scrollbar track & thumb styling (WebKit) */
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: #c0a46c;
+  border-radius: 9999px;
+}
+.scrollbar-hide::-webkit-scrollbar-thumb:hover {
+  background: #a08a5d;
+}
+
+/* Firefox: hide scrollbar by default */
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+/* Firefox: show thin scrollbar on hover */
+.hover\:scrollbar-show:hover {
+  scrollbar-width: thin;
+}
+
+/* A fade-out gradient on the right to hint there's more to view */
+.scroll-fade-right {
+  position: relative;
+}
+
+.scroll-fade-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  pointer-events: none;
+  background: linear-gradient(
+    to left,
+    #fff8ec 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
