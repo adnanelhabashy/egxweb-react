@@ -15,10 +15,14 @@
   /* Diagonal gradient with a darker, premium gold center */
   background: linear-gradient(
     60deg,
-    rgba(192, 164, 108, 0) 20%,
-    rgba(83, 69, 41, 0.8) 50%,
-    rgba(192, 164, 108, 0) 80%
+    /* Pure white for the edges */ rgba(255, 255, 255, 0) 0%,
+    /* Stay white until ~47% */ rgba(192, 164, 108, 0.2) 47%,
+    /* Fade into gold around the midpoint (narrow band) */
+      rgba(192, 164, 108, 0.3) 50%,
+    /* Fade back to white by ~53% */ rgba(192, 164, 108, 0.2) 53%,
+    /* White for the remainder */ rgba(255, 255, 255, 0) 100%
   );
+
   background-size: 300% 300%;
   animation: goldWave 10s ease-in-out infinite;
 }
